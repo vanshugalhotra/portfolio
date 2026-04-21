@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Vanshu Galhotra — MCA, NIT Trichy</title>
+  <meta name="description"
+    content="Portfolio of Vanshu Galhotra — Full Stack Developer, MCA student at NIT Trichy. Specializing in web development, algorithm design, and machine learning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Read progress bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Page reading progress"></div>
+
+  <!-- Mobile Header -->
+  <header class="mobile-header" role="banner">
+    <div class="mobile-brand-wrap">
+      <div class="mobile-avatar">
+        <img src="mai.png" alt="Vanshu Galhotra" onerror="this.style.display='none'" />
+      </div>
+      <span class="mobile-brand">Vanshu Galhotra</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <div class="layout">
+
+    <!-- ============================================================
+         SIDEBAR
+    ============================================================ -->
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Primary navigation">
+
+      <div class="sidebar-avatar">
+        <img src="mai.png" alt="Vanshu Galhotra" onerror="this.parentElement.style.display='none'" />
+      </div>
+      <div class="sidebar-brand">
+        <div class="name">Vanshu Galhotra</div>
+        <div class="role">MCA · NIT Trichy</div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li>
+            <a class="nav-link active" data-target="home" href="#home" id="nav-home">
+              <i class="fas fa-house" aria-hidden="true"></i><span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" data-target="about" href="#about" id="nav-about">
+              <i class="fas fa-user" aria-hidden="true"></i><span>About</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" data-target="skills" href="#skills" id="nav-skills">
+              <i class="fas fa-code" aria-hidden="true"></i><span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" data-target="projects" href="#projects" id="nav-projects">
+              <i class="fas fa-briefcase" aria-hidden="true"></i><span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" data-target="achievements" href="#achievements" id="nav-achievements">
+              <i class="fas fa-award" aria-hidden="true"></i><span>Achievements</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" data-target="contact" href="#contact" id="nav-contact">
+              <i class="fas fa-envelope" aria-hidden="true"></i><span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-label">Connect</div>
+        <div class="social-row">
+          <a href="https://github.com/vanshugalhotra" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vanshugalhotra/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/vanshu_galhotra" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============================================================
+         MAIN CONTENT
+    ============================================================ -->
+    <main class="content" id="mainContent">
+
+      <!-- ── HERO ────────────────────────────────────────────── -->
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+
+        <div class="hero-left reveal">
+          <h1 class="hero-name" id="hero-heading">
+            Vanshu<br /><span>Galhotra</span>
+          </h1>
+          <p class="hero-bio">
+            I'm a passionate, originally self-taught developer currently pursuing my MCA at NIT Trichy. I
+            specialize in full stack web development, algorithm design, and exploring machine learning. I enjoy
+            building dynamic, scalable systems and applying my problem-solving skills to real-world challenges.
+          </p>
+          <div class="hero-actions">
+            <a href="205124107_VanshuGalhotra.pdf" target="_blank" class="btn-primary">
+              <i class="fas fa-download" aria-hidden="true"></i> Download CV
+            </a>
+            <a href="#contact" class="btn-outline">
+              <i class="fas fa-envelope" aria-hidden="true"></i> Get in touch
+            </a>
+          </div>
+
+          <div class="hero-stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Projects completed</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Years of experience</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Happy clients</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo -->
+        <div class="hero-photo-wrap reveal reveal-delay-2" aria-hidden="true">
+          <div class="hero-photo-frame">
+            <img src="mai.png" alt="Vanshu Galhotra" class="hero-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hero-photo-fallback" style="display:none;">VG</div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ── ABOUT ───────────────────────────────────────────── -->
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="section-header reveal">
+          <p class="section-label">Background</p>
+          <h2 class="section-title" id="about-heading">About Me</h2>
+        </div>
+
+        <div class="about-body">
+          <div class="about-text reveal reveal-delay-1">
+            <p>
+              I'm a passionate, originally self-taught developer currently pursuing my MCA at NIT Trichy. My
+              primary areas of interest include Data Structures and Algorithms, Design and Analysis of
+              Algorithms, Machine Learning, and Deep Learning.<br /> <br />
+              I enjoy building well-engineered, scalable platforms and diving deep into new technologies.
+            </p>
+            <a href="205124107_VanshuGalhotra.pdf" target="_blank" class="btn-outline"
+              style="display:inline-flex; margin-top:1.25rem;">
+              <i class="fas fa-file-alt" aria-hidden="true"></i> View Resume
+            </a>
+          </div>
+
+          <div class="reveal reveal-delay-2">
+            <p class="tl-section-label">Education &amp; Experience</p>
+            <div class="timeline" role="list">
+
+              <div class="timeline-item" role="listitem">
+                <p class="tl-period">May 2025 – Jun 2025</p>
+                <p class="tl-title">Research Internship</p>
+                <p class="tl-org">DCSA, Panjab University</p>
+                <p class="tl-desc">
+                  Worked on "An Improved Heuristic Approach for Recovery of Drawing Order in Scanned Digit
+                  Images" using graph-theoretic and heuristic methods. Achieved 98.90% accuracy with neural
+                  networks, leading to a research paper.
+                </p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <p class="tl-period">2024 – 2027</p>
+                <p class="tl-title">Master of Computer Applications</p>
+                <p class="tl-org">NIT Trichy</p>
+                <p class="tl-desc">Current CGPA: 9.55*</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <p class="tl-period">2021 – 2024</p>
+                <p class="tl-title">Bachelor of Computer Applications</p>
+                <p class="tl-org">Panjab University, Chandigarh</p>
+                <p class="tl-desc">Graduated with 85.91%. Secured First Position in DAV College.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <p class="tl-period">2019 – 2021</p>
+                <p class="tl-title">Class X &amp; XII (CBSE)</p>
+                <p class="tl-org">DAV Public School, Kotkapura</p>
+                <p class="tl-desc">Class XII: 98.20% &nbsp;|&nbsp; Class X: 90.60%</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SKILLS ──────────────────────────────────────────── -->
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="section-header reveal">
+          <p class="section-label">Technical</p>
+          <h2 class="section-title" id="skills-heading">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal reveal-delay-1">
+            <span class="skill-group-label">Languages</span>
+            <div class="skill-pills">
+              <span class="skill-pill">C</span>
+              <span class="skill-pill">C++</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Java</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-2">
+            <span class="skill-group-label">Web Development</span>
+            <div class="skill-pills">
+              <span class="skill-pill">HTML &amp; CSS</span>
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Next.js</span>
+              <span class="skill-pill">NestJS</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">AWS</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-3">
+            <span class="skill-group-label">ML &amp; Data Science</span>
+            <div class="skill-pills">
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">Deep Learning</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-4">
+            <span class="skill-group-label">Tooling &amp; Other</span>
+            <div class="skill-pills">
+              <span class="skill-pill">Git / GitHub</span>
+              <span class="skill-pill">CI/CD</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">LaTeX</span>
+              <span class="skill-pill">Postman</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ────────────────────────────────────────── -->
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="section-header reveal">
+          <p class="section-label">Selected work</p>
+          <h2 class="section-title" id="projects-heading">Projects</h2>
+          <p class="section-desc">
+            Production-grade applications, platforms, and open-source work I have shipped.
+          </p>
+        </div>
+
+        <div class="projects-list reveal" role="list">
+          <!-- 2. Oct 2025 → Jan 2026 -->
+          <article class="project-card" role="listitem">
+            <div class="project-top">
+              <h3 class="project-name">Real-time Fleet Management System</h3>
+              <span class="project-period">Oct 2025 – Jan 2026</span>
+            </div>
+            <p class="project-desc">
+              Designed a production-ready fleet management dashboard for a private logistics firm. Efficiently
+              tracks vehicle documentation, operational workflows, and daily shipments. Deployed on AWS with
+              automated S3 backups and is currently used in live daily operations.
+            </p>
+            <div class="project-bottom">
+              <div class="project-stack">
+                <span>Next.js</span><span>NestJS</span><span>PostgreSQL</span><span>AWS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vanshugalhotra/vehicle-docs-dashboard" target="_blank" rel="noopener"
+                  class="project-link" title="View Source" aria-label="GitHub repository">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+                <a href="http://35.154.213.32/" target="_blank" rel="noopener" class="project-link" title="Live Demo"
+                  aria-label="Live project">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 1. Most recent: Feb 2026 → Mar 2026 -->
+          <article class="project-card" role="listitem">
+            <div class="project-top">
+              <h3 class="project-name">VersionOps Dashboard</h3>
+              <span class="project-period">Feb 2026 – Mar 2026</span>
+            </div>
+            <p class="project-desc">
+              Engineered a centralised dashboard to streamline the VERSION'26 departmental event. Handles
+              student registrations, event tracking, real-time results publishing, and live leaderboards to
+              ensure the event runs without manual intervention.
+            </p>
+            <div class="project-bottom">
+              <div class="project-stack">
+                <span>Next.js</span><span>Frontend</span><span>Event Management</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vanshugalhotra/VersionOps" target="_blank" rel="noopener"
+                  class="project-link" title="View Source" aria-label="GitHub repository">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+                <a href="https://dashboard.version26.in/" target="_blank" rel="noopener" class="project-link"
+                  title="Live Demo" aria-label="Live project">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+
+          <!-- 3. May 2025 → Jun 2025 -->
+          <article class="project-card" role="listitem">
+            <div class="project-top">
+              <h3 class="project-name">BackTrack (INFOTREK'25)</h3>
+              <span class="project-period">May 2025 – Jun 2025</span>
+            </div>
+            <p class="project-desc">
+              Web application built for the INFOTREK'25 gathering organised by our ACM Chapter — primarily
+              for hosting competitive reverse engineering events safely. Incorporates structured CI/CD
+              pipelines to guarantee flawless automated deployment during competitions.
+            </p>
+            <div class="project-bottom">
+              <div class="project-stack">
+                <span>Next.js</span><span>NestJS</span><span>CI/CD</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vanshugalhotra/backtrack" target="_blank" rel="noopener"
+                  class="project-link" title="View Source" aria-label="GitHub repository">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Sep 2024 → Dec 2024 -->
+          <article class="project-card" role="listitem">
+            <div class="project-top">
+              <h3 class="project-name">
+                pychess-engine
+                <span style="font-size:0.75rem; color:var(--clr-text-faint); font-weight:400;">(PyPI)</span>
+              </h3>
+              <span class="project-period">Sep 2024 – Dec 2024</span>
+            </div>
+            <p class="project-desc">
+              A fully-featured Python-based chess engine library published on PyPI. Evaluates complex board
+              positions utilising alpha-beta pruning, and supports smooth multi-threaded environments for
+              maximum speed and structural modularity.
+            </p>
+            <div class="project-bottom">
+              <div class="project-stack">
+                <span>Python</span><span>Algorithm Design</span><span>Multi-threading</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vanshugalhotra" target="_blank" rel="noopener" class="project-link"
+                  title="View Source" aria-label="GitHub repository">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+                <a href="https://pypi.org/project/pychess-engine/" target="_blank" rel="noopener" class="project-link"
+                  title="View on PyPI" aria-label="View on PyPI">
+                  <i class="fas fa-box-open" aria-hidden="true"></i> PyPI
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Jun 2024 → Aug 2024 -->
+          <article class="project-card" role="listitem">
+            <div class="project-top">
+              <h3 class="project-name">Stock Management System</h3>
+              <span class="project-period">Jun 2024 – Aug 2024</span>
+            </div>
+            <p class="project-desc">
+              Developed a comprehensive inventory platform for "Om Tractors." The system automatically audits
+              and updates pricing across thousands of products using centralized lists, dramatically reducing
+              manual data entry. Reliably running in production for over two years.
+            </p>
+            <div class="project-bottom">
+              <div class="project-stack">
+                <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>Production</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vanshugalhotra" target="_blank" rel="noopener" class="project-link"
+                  title="View Source" aria-label="GitHub repository">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+                <a href="https://om-tractors-record.vercel.app/" target="_blank" rel="noopener" class="project-link"
+                  title="Live Demo" aria-label="Live project">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. HelpMeFolks — In Production · 3 Years -->
+          <article class="project-card" role="listitem">
+            <div class="project-top">
+              <h3 class="project-name">HelpMeFolks Platform</h3>
+              <span class="project-period">In Production · 3 Years</span>
+            </div>
+            <p class="project-desc">
+              Created the official landing and service platform for HelpMeFolks — a growing startup
+              specialising in bespoke engineering projects for students and small businesses. Has been
+              successfully live and driving client engagement reliably.
+            </p>
+            <div class="project-bottom">
+              <div class="project-stack">
+                <span>Web Design</span><span>Business Platform</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/vanshugalhotra" target="_blank" rel="noopener" class="project-link"
+                  title="View Source" aria-label="GitHub repository">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+                <a href="https://helpmefolks.vercel.app/" target="_blank" rel="noopener" class="project-link"
+                  title="Live Demo" aria-label="Live project">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ── ACHIEVEMENTS ────────────────────────────────────── -->
+      <section class="section" id="achievements" aria-labelledby="ach-heading">
+        <div class="section-header reveal">
+          <p class="section-label">Recognition</p>
+          <h2 class="section-title" id="ach-heading">Achievements</h2>
+        </div>
+
+        <div class="achievements-layout">
+
+          <div class="ach-block reveal reveal-delay-1">
+            <div class="ach-block-title">
+              <i class="fas fa-trophy" aria-hidden="true"></i> Academic
+            </div>
+            <div class="ach-entry">
+              <div class="ach-dot"></div>
+              <div>
+                <p class="ach-entry-name">NIMCET 2024 — All India Rank 10</p>
+                <p class="ach-entry-sub">Secured AIR 10 in the national entrance examination.</p>
+              </div>
+            </div>
+            <div class="ach-entry">
+              <div class="ach-dot"></div>
+              <div>
+                <p class="ach-entry-name">BCA Gold Medal</p>
+                <p class="ach-entry-sub">DAV College, Chandigarh (Panjab University)</p>
+              </div>
+            </div>
+            <div class="ach-entry">
+              <div class="ach-dot"></div>
+              <div>
+                <p class="ach-entry-name">1st Prize — Software Development</p>
+                <p class="ach-entry-sub">Inter College Competition, Panjab University</p>
+              </div>
+            </div>
+            <div class="ach-entry">
+              <div class="ach-dot"></div>
+              <div>
+                <p class="ach-entry-name">2nd Prize — Debugging &amp; Math Quiz</p>
+                <p class="ach-entry-sub">Top positions in Inter &amp; Intra College technical competitions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:1.25rem;">
+
+            <div class="ach-block reveal reveal-delay-2">
+              <div class="ach-block-title">
+                <i class="fas fa-users" aria-hidden="true"></i> Responsibility
+              </div>
+              <div class="ach-entry">
+                <div class="ach-dot"></div>
+                <div>
+                  <p class="ach-entry-name">Chairperson — ACM Student Chapter</p>
+                  <p class="ach-entry-sub">NIT Trichy · Oct 2025 – Present. Organising events and building tech culture.
+                  </p>
+                </div>
+              </div>
+              <div class="ach-entry">
+                <div class="ach-dot"></div>
+                <div>
+                  <p class="ach-entry-name">EEC Head — VERSION'26</p>
+                  <p class="ach-entry-sub">Nov 2025 – Present. Managing core teams to plan and execute flagship events.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ach-block reveal reveal-delay-3">
+              <div class="ach-block-title">
+                <i class="fas fa-basketball-ball" aria-hidden="true"></i> Extracurricular
+              </div>
+              <div class="ach-entry">
+                <div class="ach-dot"></div>
+                <div>
+                  <p class="ach-entry-name">Basketball — Sportsfete'24</p>
+                  <p class="ach-entry-sub">Represented department in the sports fest organised by NIT Trichy.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── CONTACT ─────────────────────────────────────────── -->
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="section-header reveal">
+          <p class="section-label">Let's talk</p>
+          <h2 class="section-title" id="contact-heading">Contact</h2>
+        </div>
+
+        <div class="contact-layout">
+
+          <div class="reveal reveal-delay-1">
+            <p class="contact-intro">
+              I am currently open to exciting opportunities in Software Engineering and Web Development.
+              Feel free to reach out via email or connect on my social channels if you have a project in
+              mind or just want to collaborate.
+            </p>
+
+            <div class="contact-details">
+              <div class="cdetail">
+                <span class="cdetail-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                <span>Kotkapura, Punjab</span>
+              </div>
+              <div class="cdetail">
+                <span class="cdetail-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                <a href="mailto:galhotravanshu@gmail.com">galhotravanshu@gmail.com</a>
+              </div>
+              <div class="cdetail">
+                <span class="cdetail-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></span>
+                <a href="tel:+918427733664">+91 84277 33664</a>
+              </div>
+              <div class="cdetail">
+                <span class="cdetail-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
+                <span>MCA · NIT Trichy</span>
+              </div>
+            </div>
+
+            <div class="contact-social" aria-label="Social links">
+              <a href="https://github.com/vanshugalhotra" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/vanshugalhotra/" target="_blank" rel="noopener"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/vanshu_galhotra" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal reveal-delay-2" action="#" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="contact-name">Name</label>
+                <input class="form-input" type="text" id="contact-name" name="name" required placeholder="Your name"
+                  autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="contact-email">Email</label>
+                <input class="form-input" type="email" id="contact-email" name="email" required
+                  placeholder="your@email.com" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input class="form-input" type="text" id="contact-subject" name="subject" required
+                placeholder="What's this about?" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea class="form-textarea" id="contact-message" name="message"
+                placeholder="Tell me about your project or opportunity…"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn-primary">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
